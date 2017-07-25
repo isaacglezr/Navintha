@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="emplo_view" model="ir.ui.view">
+            <field name="name">hr.employee_emplo_view.inherited</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"></field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='address_id']" position="before">
+                    <field name="x_numempleado"/>
+                </xpath>
+                <xpath expr="//field[@name='user_id']" position="after">
+                    <field name="x_contratacion"/>
+                    <field name="x_antiguedad"/> dias
+                    <field name="x_observaciones"/>
+                </xpath>
+                <xpath expr="//field[@name='address_home_id']" position="after">
+                    <field name="x_perfilacademico"/>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</openerp>
