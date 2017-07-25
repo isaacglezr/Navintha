@@ -23,8 +23,8 @@
 
     # always loaded
     'data': [
-        'views/employee_view.xml',
-    ], 
+        'view/employee_view.xml',
+    ],
     'installable':True,
     'auto_install':False,
 }

@@ -6,7 +6,7 @@
 	    <field name="model">employee.navintha</field>
 	    <field name="inherit_id" ref="hr.view_employee_form"></field>
 	    <field name="arch" type="xml">
-	        <xpath expr="//field[@name='adress_id']" position="before">
+	        <xpath expr="//field[@name='address_id']" position="before">
 	            <field name="x_numempleado" />
                 </xpath>
                 <xpath expr="//field[@name='user_id']" position="before">
